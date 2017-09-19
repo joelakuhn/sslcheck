@@ -1,0 +1,15 @@
+{
+  "name": "sslcheck",
+  "version": "1.0.0",
+  "description": "Quick cli tool to check ssl status",
+  "main": "sslvalidator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Kuhn",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {}
+}
