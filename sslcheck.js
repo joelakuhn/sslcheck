@@ -23,7 +23,7 @@ function validate(host, expect_valid) {
     };
 
     var req = https.request(options, function(res) {
-      var cert = res.connection.getPeerCertificate();
+      var cert = res.socket.getPeerCertificate();
       var diff_in_days = Math.floor((new Date(cert.valid_to) - now) / 86400000);
       var color = color_console(diff_in_days);
       console.log(colors[color]("host:       ", host));
